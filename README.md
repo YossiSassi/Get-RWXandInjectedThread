@@ -5,3 +5,7 @@ Example syntax:
 ```
 .\Get-RWXandInjectedThread.ps1 -ProcessID 1189 -StringToLookFor 'MZ'
 ```
+Scan all processes:
+```
+ps | foreach { .\Get-RWXandInjectedThread.ps1 -ProcessID $_.id}
+```
