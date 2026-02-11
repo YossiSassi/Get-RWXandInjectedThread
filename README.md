@@ -9,3 +9,5 @@ Scan all processes:
 ```
 ps | foreach { .\Get-RWXandInjectedThread.ps1 -ProcessID $_.id}
 ```
+### Windows Memory Threat Analysis ###
+For a more robust scan + memory analysis with an html findings report, check out [https://github.com/YossiSassi/WindowsMemoryThreatAnalysis](https://github.com/YossiSassi/WindowsMemoryThreatAnalysis)
